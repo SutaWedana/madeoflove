@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Love ♡</title>
+
+  <!-- Logo di tab browser -->
+  <link rel="icon" type="image/png" href="img/stiker5.png">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+
+
+
+<!-- MINI FLOATING MUSIC CONTROL -->
+<div class="floating-music" id="floatingMusic">
+  <span class="floating-music-disc">♫</span>
+
+  <button
+    type="button"
+    id="floatingMusicBtn"
+    aria-label="Putar musik"
+    title="Putar musik"
+  >
+    <span id="floatingMusicIcon">▶</span>
+  </button>
+</div>
+
+<!-- ELEGANT CHAPTER NAVIGATION -->
+<nav class="chapter-nav" id="chapterNav" aria-label="Navigasi halaman">
+</nav>
+
+  <!-- WELCOME OPENING SCREEN -->
+<div class="welcome-screen" id="welcomeScreen">
+
+  <div class="welcome-curtain curtain-left"></div>
+  <div class="welcome-curtain curtain-right"></div>
+
+  <div class="welcome-content" id="welcomeContent">
+
+    <span class="welcome-subtitle">A little surprise for you</span>
+
+    <div class="welcome-decoration">♡</div>
+
+    <h1>
+      For Someone<br>
+      <em>Very Special</em>
+    </h1>
+
+    <p>
+      Today is all about you.<br>
+      I made something special just for you.
+    </p>
+
+    <button id="openBirthday">
+      Open Your Surprise
+      <span>♡</span>
+    </button>
+
+    <small>Made with love, just for you</small>
+
+  </div>
+
+</div>
+
+
+<!-- 1. Hero - Birthday Cover -->
+<section class="slide red hero hero-romantic">
+
+  <div class="hero-decoration hero-star">✦</div>
+  <div class="hero-decoration hero-heart">♡</div>
+  <div class="hero-decoration hero-sparkle">✧</div>
+
+  <div class="hero-photo-wrap">
+    <span class="hero-photo-tape"></span>
+    <span class="ph hero-photo">
+      <img src="img/foto1.jpeg" alt="Foto ulang tahunmu">
+    </span>
+    <span class="hero-photo-caption">my favorite girl ♡</span>
+  </div>
+
+  <div class="hero-content">
+    <span class="hero-eyebrow">A SPECIAL DAY FOR SOMEONE SPECIAL</span>
+
+    <h1>Happy <em>Birthday</em></h1>
+
+    <div class="hero-divider">
+      <span></span> ♡ <span></span>
+    </div>
+
+    <h2>Ni Komang Ayu<br>Widiastuti</h2>
+
+    <div class="hero-date">
+      <span>19</span>
+      <span class="date-divider">/</span>
+      <span>11</span>
+      <span class="date-divider">/</span>
+      <span>2026</span>
+    </div>
+
+    <p class="hero-message">
+      To the girl who makes<br>
+      my world a little more beautiful.
+    </p>
+
+    <span class="hero-bottom-note">made with all my love ♡</span>
+  </div>
+  
+
+</section>
+
+<section class="birthday-countdown-strip">
+  <p class="countdown-strip-label">
+    ✦ COUNTING DOWN TO YOUR SPECIAL DAY ♡
+  </p>
+
+  <div class="countdown-strip-timer">
+    <div>
+      <span id="count-days">19</span>
+      <small>DAYS</small>
+    </div>
+    <span>:</span>
+    <div>
+      <span id="count-hours">00</span>
+      <small>HOURS</small>
+    </div>
+    <span>:</span>
+    <div>
+      <span id="count-minutes">00</span>
+      <small>MINUTES</small>
+    </div>
+    <span>:</span>
+    <div>
+      <span id="count-seconds">00</span>
+      <small>SECONDS</small>
+    </div>
+  </div>
+
+  <p id="countdown-message">
+    Every second brings us closer to you ♡
+  </p>
+</section>
+
+
+
+
+
+<!-- 2. Favorite Person -->
+<section class="slide cream center favorite-section">
+
+  <div class="favorite-heading">
+    <h3>Happy Birthday</h3>
+    <h3><em>To my favorite person.</em> <span class="heading-heart">♡</span></h3>
+  </div>
+
+  <p class="favorite-message">
+    Hari ini tentang merayakanmu: caramu tersenyum, peduli,
+    dan kebahagiaan yang kamu bawa ke hidupku.
+  </p>
+
+  <div class="favorite-gallery">
+    <span class="favorite-deco deco-left">♡<small>✧</small></span>
+
+    <div class="favorite-photo">
+      <img src="img/1.jpeg" alt="Foto kenangan 1">
+    </div>
+
+    <div class="favorite-photo">
+      <img src="img/2.jpeg" alt="Foto kenangan 2">
+    </div>
+
+    <div class="favorite-photo">
+      <img src="img/3.jpeg" alt="Foto kenangan 3">
+    </div>
+
+    <span class="favorite-deco deco-right">♡<small>✧</small></span>
+  </div>
+
+  <button class="hidden-love-heart heart-pos-1"
+        data-heart="1" aria-label="Temukan hati tersembunyi">♡</button>
+</section>
+
+
+
+<!-- 3. Harapan dan Doa -->
+<section class="slide cream center wishes-section">
+  <h3>My <em>Wishes</em> & Prayers for You</h3>
+
+  <p class="wishes-intro">
+    Di hari spesialmu ini, ada banyak harapan dan doa
+    yang ingin aku sampaikan untukmu, sayang. ♡
+  </p>
+
+  <div class="wishes-grid">
+
+    <div class="wish-card">
+      <span class="wish-icon">♡</span>
+      <h4>Kebahagiaanmu</h4>
+      <p>
+        Semoga kamu selalu dikelilingi kebahagiaan,
+        punya banyak alasan untuk tersenyum,
+        dan tidak pernah merasa sendirian.
+      </p>
+    </div>
+
+    <div class="wish-card">
+      <span class="wish-icon">✿</span>
+      <h4>Impianmu</h4>
+      <p>
+        Semoga semua hal yang kamu impikan
+        perlahan menjadi nyata. Semoga setiap
+        langkahmu selalu membawa kamu lebih dekat
+        dengan masa depan yang kamu inginkan.
+      </p>
+    </div>
+
+    <div class="wish-card">
+      <span class="wish-icon">☁</span>
+      <h4>Kesehatanmu</h4>
+      <p>
+        Semoga kamu selalu sehat, diberi kekuatan
+        melewati hari-hari yang berat, dan selalu
+        punya alasan untuk tetap tersenyum.
+      </p>
+    </div>
+
+    <div class="wish-card">
+      <span class="wish-icon">∞</span>
+      <h4>Hubungan Kita</h4>
+      <p>
+        Semoga kita terus tumbuh bersama,
+        saling memahami, saling menguatkan,
+        dan tetap memilih satu sama lain
+        di setiap keadaan.
+      </p>
+    </div>
+
+  </div>
+
+  <p class="wishes-ending">
+    “Semoga semesta selalu baik kepadamu,
+    dan semoga aku masih menjadi bagian
+    dari banyak hal indah dalam hidupmu.” ♡
+  </p>
+
+  <button class="hidden-love-heart heart-pos-2"
+        data-heart="2" aria-label="Temukan hati tersembunyi">♡</button>
+</section>
+
+
+
+<!-- OPEN WHEN LETTERS -->
+<section class="slide open-when-section">
+
+  <div class="open-when-heading">
+    <span class="open-when-eyebrow">A LITTLE SOMETHING FOR YOU</span>
+
+    <h3>Open <em>When...</em> ♡</h3>
+
+    <p>
+      A few little letters for the moments<br>
+      when your heart needs them.
+    </p>
+  </div>
+  <div class="open-when-grid">
+
+    <!-- LETTER 1 -->
+    <button class="open-when-envelope"
+            type="button"
+            data-letter="miss">
+      <span class="envelope-icon">✉</span>
+      <span class="envelope-heart">♡</span>
+      <span class="envelope-label">OPEN WHEN...</span>
+      <span class="envelope-title">You miss me</span>
+      <span class="envelope-hint">A little reminder of my love</span>
+    </button>
+
+    <!-- LETTER 2 -->
+    <button class="open-when-envelope"
+            type="button"
+            data-letter="sad">
+      <span class="envelope-icon">✉</span>
+      <span class="envelope-heart">♡</span>
+      <span class="envelope-label">OPEN WHEN...</span>
+      <span class="envelope-title">You feel sad</span>
+      <span class="envelope-hint">For your difficult days</span>
+    </button>
+
+    <!-- LETTER 3 -->
+    <button class="open-when-envelope"
+            type="button"
+            data-letter="hug">
+      <span class="envelope-icon">✉</span>
+      <span class="envelope-heart">♡</span>
+      <span class="envelope-label">OPEN WHEN...</span>
+      <span class="envelope-title">You need a hug</span>
+      <span class="envelope-hint">A warm hug from me</span>
+    </button>
+
+    <!-- LETTER 4 -->
+    <button class="open-when-envelope"
+            type="button"
+            data-letter="doubt">
+      <span class="envelope-icon">✉</span>
+      <span class="envelope-heart">♡</span>
+      <span class="envelope-label">OPEN WHEN...</span>
+      <span class="envelope-title">You doubt yourself</span>
+      <span class="envelope-hint">Remember how amazing you are</span>
+    </button>
+
+  </div>
+
+  <p class="open-when-footer">
+    No matter what happens, you will always have a place in my heart. ♡
+  </p>
+
+  <!-- LETTER POPUP -->
+  <dialog class="open-when-dialog" id="openWhenDialog">
+
+    <div class="letter-paper">
+
+      <button class="letter-close"
+              id="closeOpenWhen"
+              type="button"
+              aria-label="Close letter">
+        ×
+      </button>
+
+      <span class="letter-decoration">♡</span>
+
+      <p class="letter-small-title">A LITTLE LETTER FOR YOU</p>
+
+      <h2 id="openWhenTitle">When You Miss Me</h2>
+
+      <div class="letter-divider">
+        <span>✧</span>
+      </div>
+
+      <div class="letter-content" id="openWhenContent"></div>
+
+      <div class="letter-signature">
+        With all my love,
+        <span>Your favorite person ♡</span>
+      </div>
+
+    </div>
+
+  </dialog>
+
+</section>
+
+
+
+<!-- 4. Lagu -->
+<section class="slide red center music-section">
+
+  <h3>This <em>song</em> is just like you.</h3>
+
+  <div class="record-stage">
+
+    <span class="music-deco heart heart-one">♡</span>
+    <span class="music-deco heart heart-two">♡</span>
+
+    <div class="record-glow"></div>
+
+    <div class="vinyl" id="vinyl"
+         role="button" tabindex="0"
+         aria-label="Putar atau jeda lagu"
+         title="Klik untuk pause/play">
+
+      <div class="vinyl-shine"></div>
+
+      <div class="vinyl-label">
+        <span>♥</span>
+        <i></i>
+      </div>
+
+      <span class="vinyl-marker"></span>
+    </div>
+
+    <div class="tonearm">
+      <div class="tonearm-base"></div>
+
+      <div class="tonearm-stick">
+        <div class="tonearm-head">♥</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JUDUL LAGU DI BAWAH PIRINGAN -->
+  <div class="song-caption">
+    <p>Ed Sheeran - <em>Perfect</em></p>
+
+    <div class="song-divider">
+      <span>♥</span>
+    </div>
+
+    <small id="music-status">A song just for you ♡</small>
+  </div>
+
+  <audio
+    id="audio"
+    src="musik/Ed Sheeran - Perfect Lirik Terjemahan.mp3"
+    loop
+    preload="auto">
+  </audio>
+
+  <button class="hidden-love-heart heart-pos-3"
+          data-heart="3"
+          aria-label="Temukan hati tersembunyi">♡</button>
+
+</section>
+
+
+
+<!-- 5. Love Letter -->
+<section class="slide cream center love-letter">
+
+  <div class="letter-decoration letter-heart">♡</div>
+  <div class="letter-decoration letter-flower">✿</div>
+
+  <p class="letter-eyebrow">A LETTER FROM MY HEART</p>
+
+  <h3>A Little <em>Love Letter</em> for You ♡</h3>
+
+  <p class="letter-subtitle">
+    Some things are easier to write than to say.
+  </p>
+
+  <div class="letter-paper">
+
+    <span class="letter-tape"></span>
+
+    <div class="letter-top">
+      <span>19 November 2026</span>
+      <span class="letter-small-heart">♡</span>
+    </div>
+
+    <div class="letter-content">
+
+      <p class="letter-greeting">Untuk kamu, sayangku ♡</p>
+
+      <p>
+        Happy birthday, my love.
+      </p>
+
+      <p>
+        Di hari spesialmu ini, aku cuma ingin kamu tahu
+        betapa bersyukurnya aku karena bisa mengenalmu
+        dan menjadi bagian dari hidupmu.
+      </p>
+
+      <p>
+        Terima kasih sudah hadir dan membawa banyak
+        kebahagiaan ke hari-hariku. Mungkin aku tidak
+        selalu pandai mengungkapkan perasaan lewat kata-kata,
+        tapi aku harap kamu bisa merasakan betapa berartinya
+        dirimu buat aku.
+      </p>
+
+      <p>
+        Aku tidak bisa menjanjikan bahwa setiap hari
+        akan selalu mudah. Tapi aku ingin terus belajar
+        memahami kamu, menemani kamu, mendukung impianmu,
+        dan merayakan setiap hal kecil yang membuatmu bahagia.
+      </p>
+
+      <p>
+        Di umur barumu ini, semoga kamu selalu diberi
+        kesehatan, kebahagiaan, dan kekuatan untuk melewati
+        apa pun yang datang. Jangan lupa untuk menyayangi
+        dirimu sendiri, ya. Kamu juga pantas mendapatkan
+        semua kebaikan yang selama ini kamu berikan kepada orang lain.
+      </p>
+
+      <p>
+        Aku senang bisa mengenalmu, menyayangimu,
+        dan membuat kenangan bersamamu. Semoga masih
+        ada banyak ulang tahunmu yang bisa kita rayakan bersama.
+      </p>
+
+      <p class="letter-closing">
+        I love you, more than these words can say. ♡
+      </p>
+
+      <div class="letter-signature">
+        With all my love,
+        <span>Your favorite person ♡</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <p class="letter-footer">
+    Every word comes from my heart ♡
+  </p>
+
+  <button class="hidden-love-heart heart-pos-4"
+        data-heart="4" aria-label="Temukan hati tersembunyi">♡</button>
+
+</section>
+
+
+
+
+
+<!-- 6. Little You -->
+<section class="slide red center little-you">
+
+  <h3>A little look into your <em>little world</em> ♡</h3>
+
+  <p class="little-you-subtitle">
+    A tiny piece of your beautiful story.
+  </p>
+
+  <div class="little-you-gallery">
+
+    <!-- Foto 1 -->
+    <div class="little-you-frame photo-one">
+      <span class="little-you-tape"></span>
+      <span class="ph">
+        <img src="img/old1.jpeg" alt="Foto masa kecil 1">
+      </span>
+      <p class="little-you-caption">Salah satu bagian kecil dari masa kecilmu.</p>
+    </div>
+
+    <!-- Foto 2 -->
+    <div class="little-you-frame photo-two">
+      <span class="little-you-tape"></span>
+      <span class="ph">
+        <img src="img/old2.jpeg" alt="Foto masa kecil 2">
+      </span>
+      <p class="little-you-caption">Bagian dari cerita yang membentuk dirimu hari ini.</p>
+    </div>
+
+    <!-- Foto 3 -->
+    <div class="little-you-frame photo-three">
+      <span class="little-you-tape"></span>
+      <span class="ph">
+        <img src="img/old3.jpeg" alt="Foto masa kecil 3">
+      </span>
+      <p class="little-you-caption">Sebelum menjadi dirimu yang sekarang, ada masa kecil ini.</p>
+    </div>
+
+  </div>
+
+  <p class="little-you-message">
+    Before you became my favorite person,<br>
+    you were someone's little girl.<br>
+    And I'm so grateful I get to love you. ♡
+  </p>
+
+  <span class="little-you-heart heart-one">♡</span>
+  <span class="little-you-heart heart-two">✿</span>
+
+  
+<button class="hidden-love-heart heart-pos-5"
+        data-heart="5" aria-label="Temukan hati tersembunyi">♡</button>
+</section>
+
+<!-- 7. Little Things I Love About You -->
+<section class="slide cream center little-things">
+  <span class="little-tag">♡ THE LITTLE THINGS ♡</span>
+
+  <h3>
+    It's the Little Things<br>
+    <em>That Make Me Love You</em>
+  </h3>
+
+  <p class="little-intro">
+    Mungkin terlihat sederhana, tapi buat aku,<br>
+    hal-hal kecil dari kamu selalu punya arti.
+  </p>
+
+  <div class="little-grid">
+    <div class="little-card">
+      <span class="little-number">01</span>
+      <span class="little-icon">♡</span>
+      <p>Caramu mengingat<br>hal-hal kecil tentangku</p>
+    </div>
+
+    <div class="little-card">
+      <span class="little-number">02</span>
+      <span class="little-icon">☀</span>
+      <p>Pesan selamat pagi<br>yang bikin hariku lebih indah</p>
+    </div>
+
+    <div class="little-card">
+      <span class="little-number">03</span>
+      <span class="little-icon">♡</span>
+      <p>Tawa kita karena<br>hal-hal receh</p>
+    </div>
+
+    <div class="little-card">
+      <span class="little-number">04</span>
+      <span class="little-icon">✿</span>
+      <p>Caramu membuatku<br>merasa disayang</p>
+    </div>
+  </div>
+
+  <p class="little-ending">
+    "It's never just the little things<br>
+    when they're coming from you."
+  </p>
+</section>
+
+
+<!-- 8. One Last Surprise -->
+<section class="slide cream center surprise-gift" id="surpriseGift">
+  <div class="gift-heading">
+    <span class="gift-eyebrow">A LITTLE SOMETHING FOR YOU ♡</span>
+    <h3>One Last <em>Surprise</em></h3>
+    <p>There's a little gift waiting just for you...</p>
+  </div>
+
+  <div class="gift-stage">
+    <div class="gift-sparkle sparkle-one">✦</div>
+    <div class="gift-sparkle sparkle-two">✧</div>
+    <div class="gift-sparkle sparkle-three">♡</div>
+
+    <button
+      class="gift-box"
+      id="giftBox"
+      type="button"
+      aria-label="Buka hadiah"
+      aria-expanded="false"
+    >
+      <span class="gift-lid">
+        <span class="gift-lid-ribbon"></span>
+        <span class="gift-bow">
+          <span></span>
+          <span></span>
+        </span>
+      </span>
+
+      <span class="gift-body">
+        <span class="gift-body-ribbon"></span>
+        <span class="gift-front-heart">♡</span>
+      </span>
+    </button>
+
+    <div class="gift-shadow"></div>
+  </div>
+
+  <p class="gift-hint" id="giftHint">
+    Psst... tap the gift to open it ♡
+  </p>
+
+  <div class="gift-reveal" id="giftReveal" aria-hidden="true">
+    <div class="gift-reveal-items">
+      <span class="gift-teddy">🧸</span>
+      <span class="gift-flower">🌷</span>
+      <span class="gift-heart">💗</span>
+    </div>
+
+    <h4>A little gift for my favorite girl ♡</h4>
+
+    <p>
+      If I could put all the happiness in the world
+      inside this box, I would give it all to you.
+    </p>
+
+    <div class="gift-final-decor">♡　✿　♡</div>
+
+    <button class="gift-replay" id="giftReplay" type="button">
+      Open it again ↻
+    </button>
+  </div>
+
+  <div class="gift-confetti" id="giftConfetti" aria-hidden="true"></div>
+</section>
+
+<!-- Hidden Love Counter -->
+<div class="hidden-love-counter" id="hiddenLoveCounter">
+  <span>♡</span>
+  <span id="hiddenLoveCount">0</span>/5 hearts found
+</div>
+
+<!-- Secret Love Message -->
+<div class="hidden-love-modal" id="hiddenLoveModal">
+  <div class="hidden-love-card">
+    <span class="secret-big-heart">♥</span>
+    <p class="secret-eyebrow">A LITTLE SECRET FOR YOU</p>
+
+    <h3>You Found My <em>Hidden Love</em> ♡</h3>
+
+    <p class="secret-message">
+      Sebenarnya, ada satu hal yang ingin selalu aku ingatkan
+      kepadamu...
+
+      <br><br>
+
+      Dari sekian banyak hal indah di dunia ini,
+      salah satu yang paling aku syukuri adalah
+      bisa mengenal dan memiliki kamu di hidupku.
+
+      <br><br>
+
+      Kalau suatu hari kamu merasa tidak cukup baik,
+      ingatlah bahwa di mata seseorang,
+      kamu selalu menjadi seseorang yang istimewa.
+
+      <br><br>
+
+      And that someone is me. I love you. ♡
+    </p>
+
+    <div class="secret-decoration">♡ ✿ ♡</div>
+
+    <button id="closeSecretMessage" type="button">
+      Keep this in your heart ♡
+    </button>
+  </div>
+</div>
+
+
+<!-- BEHIND THE SCENES LINK -->
+<section class="behind-teaser">
+  <span>A LITTLE MORE TO DISCOVER</span>
+
+  <h2>There's a story behind all of this ♡</h2>
+
+  <p>
+    A little journey of ideas, code, mistakes,
+    and everything made just for you.
+  </p>
+
+  <a href="behind-the-scenes.html">
+    Discover the Journey →
+  </a>
+</section>
+
+<footer class="love-footer">
+  <span class="footer-line"></span>
+  <div class="footer-heart">♡</div>
+  <p>Made with <span>♥</span> just for you</p>
+  <small>you'll always have a special place in my heart</small>
+  <div class="footer-date">19 · 11 · 2026</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
