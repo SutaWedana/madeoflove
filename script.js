@@ -521,7 +521,9 @@ displayGuestbookMessages();
   // 19 November 2026 pukul 00.00 waktu lokal
   const targetDate = new Date(2026, 10, 19, 0, 0, 0).getTime();
 
-  function updateCountdown() {
+      let timer = null;
+
+       function updateCountdown() {
 
     const remaining = targetDate - Date.now();
 
@@ -555,7 +557,9 @@ displayGuestbookMessages();
 
   updateCountdown();
 
-  const timer = setInterval(updateCountdown, 1000);
+if (Date.now() < targetDate) {
+  timer = setInterval(updateCountdown, 1000);
+}
 
   console.log("♡ Birthday countdown berhasil dijalankan!");
 
